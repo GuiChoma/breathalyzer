@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.guichoma.breathalyzer.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/backgroud">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@color/backgroud"
+            android:orientation="horizontal">
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/botaoParear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Parear Dispositivos"/>
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/botaoIniciar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Iniciar Bafômetro"/>
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/botaoGraficos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Visualizar Gráficos"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:layout_margin="10dp"
+            android:background="#fff"
+            android:layout_below="@id/linear">
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
